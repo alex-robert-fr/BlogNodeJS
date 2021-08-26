@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+:root{
+  --img-post-height: 250px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(222, 11%, 18%);
+  font-family: 'Besley', serif;
+}
+h1{
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  margin: 50px 0;
+}
+#articles{
+  display: flex;
+  justify-content: center;
+}
+#articles > article{
+  width: 400px;
+  height: 500px;
+  margin: 0 10px;
+  background-color: #fff;
+}
+article > img{
+  width: 100%;
+  height: var(--img-post-height);
+  object-fit: cover;
+}
+article > .tabBody{
+  margin-top: -4px;
+  text-align: center;
+  height: calc(100% - var(--img-post-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.tabBody > h3{
+  margin-bottom: 20px;
+}
+.tabBody > h3::first-letter{
+  text-transform: capitalize;
+}
+.tabBody > p{
+  font-size: 0.8rem;
+}
